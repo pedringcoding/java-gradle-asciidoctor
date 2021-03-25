@@ -1,0 +1,16 @@
+// Apply to execute convert
+apply plugin: 'org.asciidoctor.jvm.convert'
+apply plugin: 'org.asciidoctor.jvm.pdf'
+
+// A task that converts ASCII documents to PDF
+// goal: gradle asciidoctor
+asciidoctor {
+	sourceDir = file('src/main/resources/template')
+	sources {
+        include '**.adoc'
+    }
+    outputOptions {
+		backends 'pdf'
+	}
+ 	outputDir = file("$buildDir/docs/PDF")
+}

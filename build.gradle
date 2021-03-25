@@ -1,0 +1,15 @@
+plugins {
+	id 'java-library'
+	// to generate template files in PDF type
+	id 'org.asciidoctor.jvm.convert' version "$asciiDoctorVersion" apply false
+    id 'org.asciidoctor.jvm.pdf' version "$asciiDoctorVersion" apply false
+}
+
+group = gradle.ext.ProjectGroup
+version = gradle.ext.ProjectVersion
+sourceCompatibility = JavaVersion.VERSION_1_8
+
+// repositories allowed to management dependencies
+apply from: "$rootDir/config/gradle/repositories.gradle"
+// Add support to conversion step
+apply from: "$rootDir/config/gradle/document.gradle"
