@@ -1,0 +1,16 @@
+[.text-center]
+image:src/main/resources/images/hidra.jpg[alt="hidra logo",width=100,height=100]
+
+[.text-center]
+[teal]#*EXAMPLE REPORT*#
+
+[.text-center]
+[navy]##Instructions to generate report##
+
+[options="header"]
+|===
+|[teal]#Parameter#  |[teal]#Type#   |[teal]#Description#    |[role=navy]#Case#
+|Example name       |Text           |Text example           |Alphanumeric value
+|Example number     |Number         |Number example         |Numeric value
+|Graphic example    |Image          |image example          |JPG, PNG or GIF format
+|===
