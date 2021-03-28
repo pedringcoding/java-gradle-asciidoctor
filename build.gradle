@@ -1,7 +1,7 @@
 plugins {
-	id 'java-library'
-	// to generate template files in PDF type
-	id 'org.asciidoctor.jvm.convert' version "$asciiDoctorVersion" apply false
+    id 'java-library'
+    // to generate template files in PDF type
+    id 'org.asciidoctor.jvm.convert' version "$asciiDoctorVersion" apply false
     id 'org.asciidoctor.jvm.pdf' version "$asciiDoctorVersion" apply false
 }
 
