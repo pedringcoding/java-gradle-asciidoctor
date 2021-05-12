@@ -1,4 +1,4 @@
-# Generate documents with asciidoctor [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
+# Document as code [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
 ## :clipboard: Introduction
 
@@ -11,16 +11,38 @@ We all have families who tell us "take a look at the laptop that is slow for me"
 
 ## :cloud: Getting Started
 
-Follow along this notes. You will need to have at least [Java 8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) installed or some openJDK distribution, and [Gradle](https://gradle.org/) on the PATH. Clone this repository, and fire up a command-line tool.
+Follow along this notes. You will need to have at least [Java 8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) installed or some openJDK distribution, and [Gradle](https://gradle.org/) on the PATH. 
+
+You can use some package management tool for windows. E.g. Chocolatey
+
+*	[OpenJDK8 Zulu](https://azul.com) - Java Development Kits (OpenJDK build)
+
+```
+choco install zulu8 -y
+```
+
+*	[Gradle](https://gradle.org/) - Constructor and manager dependencies
+
+```
+choco install gradle --version 5.6.4 -y
+```
+
+Clone this repository, and fire up a command-line tool.
 
 > To know the document as code technique , It necessary check diff between _use editor_ and _markdown code_ to generate documents
 
 ## :computer: Commands to execute
 
+To execute the Gradle example:
+
 ```
+gradle build
 gradle asciidoctor
 ```
 
-## :coffee: Buy us a coffee
+## :octocat: Can you support me?
 
-I will continue to do things and expose notes, but donations are one of the many ways to support what I do. <a href="https://www.buymeacoffee.com/pedringcoding" title="Donate to this content using BuyMeACoffee">Contribute</a>
+I will continue to do things and expose notes, but existing many ways to support what I do:
+* Pull requests are welcome a :dizzy:
+* Don't forget to give this Repository a :star2:
+* <a href="https://www.buymeacoffee.com/pedringcoding" title="Donate to this content using BuyMeACoffee">Buy me a :coffee:</a>
